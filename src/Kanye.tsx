@@ -26,15 +26,11 @@ function AppKanye() {
 
   return (
     <>
-      <h1>The Bible according to Yeezus</h1>
+      <h1>the gospel<br />according to Yeezus</h1>
       {kanye && (
-        // This is a conditional rendering strategy using 'short-circuiting': if the left-hand
-        //  side of an && is false, then JavaScript doesn't bother to evaluate the right-hand
-        //  side (since the overall expression is false regardless)
-        // Exploiting that feature to conditional render JSX!
         <>
           <p>
-            <b>{kanye.quote}</b>
+            <b>"{kanye.quote}"</b>
           </p>
         </>
       )}
