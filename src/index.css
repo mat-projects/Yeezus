@@ -16,7 +16,11 @@ code {
     monospace;
 }
 
-h1 {
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.title {
   align-items: center;
   text-align: center;
   font-size: 7vw;
@@ -24,8 +28,7 @@ h1 {
   margin-bottom: 20px;
   color: rgb(253, 248, 237);
 }
-
-p {
+.quote {
   margin-left: auto;
   margin-right: auto;
   font-size: 3vw;
@@ -38,9 +41,4 @@ p {
   background-color: rgb(253, 248, 237);
   color: rgb(26, 23, 23);
   text-align: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
 }

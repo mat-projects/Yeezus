@@ -9,22 +9,28 @@ function AppKanye() {
 
   useEffect(() => {
     fetch("https://api.kanye.rest/")
-      .then(response => response.json())
+      .then((response) => response.json())
       .then((jsonBody: Kanye) => setKanye(jsonBody));
-  }, [])
+  }, []);
 
   return (
     <>
       <div className="container">
-        <div className="title">the gospel<br />according to Yeezus
+        <div className="title">
+          the gospel
+          <br />
+          according to Yeezus
         </div>
-        <div className="quote">{kanye && (
-        <><b>"{kanye.quote}"</b></>)}
+        <div className="quote">
+          {kanye && (
+            <>
+              <b>"{kanye.quote}"</b>
+            </>
+          )}
         </div>
         <button>get more wisdom</button>
       </div>
     </>
-    
   );
 }
 
