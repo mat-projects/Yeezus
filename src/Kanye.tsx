@@ -13,6 +13,12 @@ function AppKanye() {
       .then((jsonBody: Kanye) => setKanye(jsonBody));
   }, []);
 
+  const handleClick = () => {
+    fetch("https://api.kanye.rest/")
+    .then((response) => response.json())
+    .then((jsonBody: Kanye) => setKanye(jsonBody));
+};
+
   return (
     <>
       <div className="container">
@@ -28,7 +34,7 @@ function AppKanye() {
             </>
           )}
         </div>
-        <button>get more wisdom</button>
+        <button onClick={handleClick}>summon more wisdom</button>
       </div>
     </>
   );
