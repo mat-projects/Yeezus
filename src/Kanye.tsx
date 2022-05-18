@@ -7,17 +7,6 @@ interface Kanye {
 function AppKanye() {
   const [kanye, setKanye] = useState<Kanye>();
 
-  // useEffect(() => {
-  //   const fetchKanye = async () => {
-  //     const response = await fetch(
-  //       "https://api.kanye.rest/"
-  //     );
-  //     const jsonBody: Kanye = await response.json();
-  //     setKanye(jsonBody);
-  //   };
-  //   fetchKanye();
-  // }, []);
-
   useEffect(() => {
     fetch("https://api.kanye.rest/")
       .then(response => response.json())
@@ -26,15 +15,16 @@ function AppKanye() {
 
   return (
     <>
-      <h1>the gospel<br />according to Yeezus</h1>
-      {kanye && (
-        <>
-          <p>
-            <b>"{kanye.quote}"</b>
-          </p>
-        </>
-      )}
+      <div className="container">
+        <div className="title">the gospel<br />according to Yeezus
+        </div>
+        <div className="quote">{kanye && (
+        <><b>"{kanye.quote}"</b></>)}
+        </div>
+        <button>get more wisdom</button>
+      </div>
     </>
+    
   );
 }
 
