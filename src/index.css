@@ -26,6 +26,8 @@ button {
 @media screen and (max-width: 1000px) {
   button {
     margin: 15% 0%;
+    margin-left: auto;
+    margin-right: auto;
     width: 60%;
   }
 }
@@ -44,6 +46,8 @@ button {
 @media screen and (max-width: 1000px) {
   .title {
     margin: 20% 0%;
+    margin-left: auto;
+    margin-right: auto;
     width: 40%;
   }
 }
