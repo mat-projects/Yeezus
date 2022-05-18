@@ -23,6 +23,12 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 1000px) {
+  button {
+    margin: 15% 0%;
+    width: 60%;
+  }
+}
 
 .container {
   display: flex;
@@ -34,6 +40,12 @@ button {
   margin: 5% 0%;
   font-size: 7vw;
   color: rgb(253, 248, 237);
+}
+@media screen and (max-width: 1000px) {
+  .title {
+    margin: 20% 0%;
+    width: 40%;
+  }
 }
 .quote {
   margin-left: auto;
